@@ -22,7 +22,7 @@
     <input type="checkbox" id="nav-trigger" class="nav-trigger" />
     <label for="nav-trigger"></label>
     <div class="site-wrap"> <img class="review-logo" src="image/logo_white.png" alt="logo" width="100%">
-        <p class="reviewpage-title">Oneplus2 Review</p> <img class="head-img" src="image/o2.jpg" alt="oneplus" width="100%">
+        <p class="reviewpage-title">Oneplus2 Review</p> <img class="head-img" src="image/o2%20copy.jpg" alt="oneplus" width="100%">
         <div class="page-container">
             <p class="review-main"><b>The original review is in CHINESE. This is a translated version by GOOGLE TRANSLATE.</b>
                 <br />I personally have been very appreciate a plus the brand, not only because of a plus a generation of mobile phones in all aspects of the outstanding performance, but also because its "not to" brand concept coincides with my personal creed coincide. In this year, I have been looking forward to one plus two, looking forward to it can bring me more surprises. After more than 400 days, a mobile phone 2 generation has finally arrived, "2016 annual flagship" slogan demonstrates a plus for this product confidence. As a consumer, I can not wait to wonder whether a plus two of mobile phone strength to write a generation of brilliant, and whether worthy of the "2016 annual flagship" of the title.</p>
@@ -80,13 +80,39 @@
                 </div>
             </div>
         </div>
+        <div class="comment-container">
         <div class="comment">
             <p class="comment-title">Comments</p>
             <form>
-                <textarea name="comments" cols="100%" rows="4">say something...</textarea>
+                <textarea name="comments" cols="50" rows="4">say something...</textarea>
             </form>
             <button type="button" class="btn btn-outline-danger">Comment</button>
-        </div> <a href="#" class="back-to-top">Back to Top</a> </div>
+            </div>
+        </div> 
+    <!-- backToTop code was taken from http://bootsnipp.com/snippets/featured/link-to-top-page , but I was not able to make js animation to work-->
+    <a id="back-to-top" href="#" class="btn btn-outline-danger btn-lg back-to-top" role="button"><span class="glyphicon glyphicon-chevron-up"></span></a>
+    <script>
+     $(document).ready(function(){
+     $(window).scroll(function () {
+            if ($(this).scrollTop() > 50) {
+                $('#back-to-top').fadeIn();
+            } else {
+                $('#back-to-top').fadeOut();
+            }
+        });
+        // scroll body to 0px on click
+        $('#back-to-top').click(function () {
+            $('#back-to-top').tooltip('hide');
+            $('body,html').animate({
+                scrollTop: 0
+            }, 800);
+            return false;
+        });
+        
+        $('#back-to-top').tooltip('show');
+
+});</script>
+    </div>
     <script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
