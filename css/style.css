@@ -38,8 +38,8 @@ a {
 }
 
 .nav-active {
-    background-color: #ff3d3d;
-    color: white;
+    /*background-color: #ff3d3d;*/
+    color: #ff3d3d;
 }
 
 .navbar:hover {
@@ -319,6 +319,9 @@ ul.tool-spec{
     background-color:#ff3d3d;
     color:white;
 }
+.footer-review{
+    margin-top: 0px;
+}
 @media screen and (min-width: 2000px) {
     .page-container {
         width: 50%;
@@ -344,7 +347,7 @@ ul.tool-spec{
     }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 995px) {
     .reviewpage-title {
         width: 50%;
         font-size: 35px;

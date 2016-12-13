@@ -81,41 +81,48 @@
             </div>
         </div>
         <div class="comment-container">
-        <div class="comment">
-            <p class="comment-title">Comments</p>
-            <form>
-                <textarea name="comments" cols="50" rows="4">say something...</textarea>
-            </form>
-            <button type="button" class="btn btn-outline-danger">Comment</button>
+            <div class="comment">
+                <p class="comment-title">Comments</p>
+                <form>
+                    <textarea name="comments" cols="50" rows="4">say something...</textarea>
+                </form>
+                <button type="button" class="btn btn-outline-danger">Comment</button>
             </div>
-        </div> 
-    <!-- backToTop code was taken from http://bootsnipp.com/snippets/featured/link-to-top-page , but I was not able to make js animation to work-->
-    <a id="back-to-top" href="#" class="btn btn-outline-danger btn-lg back-to-top" role="button"><span class="glyphicon glyphicon-chevron-up"></span></a>
-    <script>
-     $(document).ready(function(){
-     $(window).scroll(function () {
-            if ($(this).scrollTop() > 50) {
-                $('#back-to-top').fadeIn();
-            } else {
-                $('#back-to-top').fadeOut();
-            }
-        });
-        // scroll body to 0px on click
-        $('#back-to-top').click(function () {
-            $('#back-to-top').tooltip('hide');
-            $('body,html').animate({
-                scrollTop: 0
-            }, 800);
-            return false;
-        });
-        
-        $('#back-to-top').tooltip('show');
-
-});</script>
+        </div>
+        <a id="back-to-top" href="#" class="btn btn-outline-danger btn-lg back-to-top" role="button"><span class="glyphicon glyphicon-chevron-up"></span></a>
+        <div class="footer-container footer-review">
+            <div class="footer-content">
+                <p class="footer-slogon">Copyright &copy; 2016 MIRACLE - Technology Stays True Here</p>
+            </div>
+        </div>
     </div>
     <script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+     <!-- backToTop code was taken from http://bootsnipp.com/snippets/featured/link-to-top-page -->
+           <script>
+            $(document).ready(function() {
+                $(window).scroll(function() {
+                    if ($(this).scrollTop() > 50) {
+                        $('#back-to-top').fadeIn();
+                    } else {
+                        $('#back-to-top').fadeOut();
+                    }
+                });
+                // scroll body to 0px on click
+                $('#back-to-top').click(function() {
+                    $('#back-to-top').tooltip('hide');
+                    $('body,html').animate({
+                        scrollTop: 0
+                    }, 800);
+                    return false;
+                });
+
+                $('#back-to-top').tooltip('show');
+
+            });
+
+        </script>
 </body>
 
 </html>
