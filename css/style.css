@@ -301,7 +301,7 @@ ul.tool-spec{
 }
 .about-content{
     font-family: 'Open Sans', sans-serif;
-    font-size:30px;
+    font-size:25px;
     text-align: center;
 }
 .about-container{
@@ -321,6 +321,58 @@ ul.tool-spec{
 }
 .footer-review{
     margin-top: 0px;
+}
+ul.exif{
+    list-style: none;
+    padding-left: 0px !important;
+}
+.formname{
+    width:60%;
+    height:50px;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border-color:black;
+    border-width: 1px;
+    margin-top: 0px;
+}
+.formtext{
+    width:60%;
+    height:300px;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 20px;
+    border-color: black;
+    border-radius: 5px;
+    border-width: 1px;
+}
+
+
+.submitbutton{
+    background-color: #ff3d3d;
+    color: white;
+    border-style: none;
+    width:80px;
+    height:45px;
+    font-size:20px;
+    position:relative; 
+    margin: 0px -40px; 
+    left:50%;
+    border-radius: 7px;
+}
+.submitbutton:hover{
+    color:black;
+    background-color:#e60000;
+}
+.weibo{
+    margin-left: 15px;
+    margin-top: -5px;
+}
+.search{
+    float:right;
+    margin-top: -41px;
+    margin-right: 5%;
 }
 @media screen and (min-width: 2000px) {
     .page-container {
@@ -429,5 +481,21 @@ ul.tool-spec{
     .about-content{
         font-size:22px;
     }
+    .formname{
+        width:80%;
+        margin-left: 10%;
+    }
+    .formtext{
+        width:80%;
+        margin-left: 10%;
+        height:200px;
+    }
+    .submitbutton{
+    width:70px;
+    height:40px;
+    font-size:17px;
+    position:relative; 
+    margin: 0px -30px; 
+}
     
 }

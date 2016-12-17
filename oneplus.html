@@ -21,7 +21,8 @@
     </ul>
     <input type="checkbox" id="nav-trigger" class="nav-trigger" />
     <label for="nav-trigger"></label>
-    <div class="site-wrap"> <img class="review-logo" src="image/logo_white.png" alt="logo" width="100%">
+    <div class="site-wrap">
+        <a href="index.html"><img class="review-logo" src="image/logo_white.png" alt="logo" width="100%"></a>
         <p class="reviewpage-title">Oneplus2 Review</p> <img class="head-img" src="image/o2%20copy.jpg" alt="oneplus" width="100%">
         <div class="page-container">
             <p class="review-main"><b>The original review is in CHINESE. This is a translated version by GOOGLE TRANSLATE.</b>
@@ -56,27 +57,27 @@
                 <h1><b>Overall Evaluation</b></h1>
                 <p class="stat-title">Design</p>
                 <div class="progress">
-                    <div class="progress-bar progress-bar-danger progress-bar-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 70%">70%</div>
+                    <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 70%">70%</div>
                 </div>
                 <p class="stat-title">Screen</p>
                 <div class="progress">
-                    <div class="progress-bar progress-bar-danger progress-bar-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 80%">80%</div>
+                    <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 80%">80%</div>
                 </div>
                 <p class="stat-title">Operating System</p>
                 <div class="progress">
-                    <div class="progress-bar progress-bar-danger progress-bar-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 70%">70%</div>
+                    <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 70%">70%</div>
                 </div>
                 <p class="stat-title">Camera</p>
                 <div class="progress">
-                    <div class="progress-bar progress-bar-danger progress-bar-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 90%">90%</div>
+                    <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 90%">90%</div>
                 </div>
                 <p class="stat-title">Battery</p>
                 <div class="progress">
-                    <div class="progress-bar progress-bar-danger progress-bar-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 80%">80%</div>
+                    <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 80%">80%</div>
                 </div>
                 <p class="stat-title">Summary</p>
                 <div class="progress">
-                    <div class="progress-bar progress-bar-danger progress-bar-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 90%">90%</div>
+                    <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 90%">90%</div>
                 </div>
             </div>
         </div>
@@ -88,8 +89,7 @@
                 </form>
                 <button type="button" class="btn btn-outline-danger">Comment</button>
             </div>
-        </div>
-        <a id="back-to-top" href="#" class="btn btn-outline-danger btn-lg back-to-top" role="button"><span class="glyphicon glyphicon-chevron-up"></span></a>
+        </div> <a id="back-to-top" href="#" class="btn btn-outline-danger btn-lg back-to-top" role="button"><span class="glyphicon glyphicon-chevron-up"></span></a>
         <div class="footer-container footer-review">
             <div class="footer-content">
                 <p class="footer-slogon">Copyright &copy; 2016 MIRACLE - Technology Stays True Here</p>
@@ -99,30 +99,33 @@
     <script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-     <!-- backToTop code was taken from http://bootsnipp.com/snippets/featured/link-to-top-page -->
-           <script>
-            $(document).ready(function() {
-                $(window).scroll(function() {
-                    if ($(this).scrollTop() > 50) {
-                        $('#back-to-top').fadeIn();
-                    } else {
-                        $('#back-to-top').fadeOut();
-                    }
-                });
-                // scroll body to 0px on click
-                $('#back-to-top').click(function() {
-                    $('#back-to-top').tooltip('hide');
-                    $('body,html').animate({
-                        scrollTop: 0
-                    }, 800);
-                    return false;
-                });
-
-                $('#back-to-top').tooltip('show');
-
+    <!--CDN link for  TweenMax-->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
+    <!-- backToTop code was taken from http://bootsnipp.com/snippets/featured/link-to-top-page -->
+    <script>
+        $(document).ready(function () {
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 50) {
+                    $('#back-to-top').fadeIn();
+                }
+                else {
+                    $('#back-to-top').fadeOut();
+                }
             });
-
-        </script>
+            // scroll body to 0px on click
+            $('#back-to-top').click(function () {
+                $('#back-to-top').tooltip('hide');
+                $('body,html').animate({
+                    scrollTop: 0
+                }, 800);
+                return false;
+            });
+            $('#back-to-top').tooltip('show');
+        });
+    </script>
+    <script>
+    TweenLite.to(".head-img", 5, {width:200%});
+    </script>
 </body>
 
 </html>
