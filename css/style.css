@@ -497,5 +497,8 @@ ul.exif{
     position:relative; 
     margin: 0px -30px; 
 }
+    .search{
+        display:none !important;
+    }
     
 }
